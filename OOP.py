@@ -28,15 +28,15 @@ class Pessoas():
         print(f"{idade}")
     
 ######################################## Instancias da classe Pessoas ########################################
-pessoa1 = Pessoas("22 Anos", "Felippe")
-pessoa2 = Pessoas("24 Anos", "Thais")
+pessoa1 = Pessoas()     #Duvida: como faço para chamar o input do metodo#
+pessoa2 = Pessoas()
 pessoa1.falar_nome()
 pessoa1.falar_idade()
 pessoa2.falar_nome()
 pessoa2.falar_idade()
 print(pessoa1.nome)
-print(pessoa1.idade)
-
+print(f"O nome é: {pessoa1.nome} e a idade é: {pessoa1.idade}")
+print(f"O nome é: {pessoa2.nome} e a idade é: {pessoa2.idade}")
 
 
 
