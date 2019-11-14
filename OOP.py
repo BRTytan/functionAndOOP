@@ -13,19 +13,29 @@
 # - retornar todas as infos do pet
 
 # Testar todos os métodos criados printando em tela os resultados solicitados acima.
-
-class Pessoa():
-    def __init__(self, pernas, olhos, pele, cabelo, mãos):              ######Modelar atributos no __init__######
+######################################## Classe Pessoas ########################################
+class Pessoas():
+############################## Metodo Construtor __Init__ ##############################    
+    def __init__(self, pernas, olhos, pele, cabelo, mãos):
         self.pernas = pernas
         self.olhos = olhos
         self.pele = pele
         self.cabelo = cabelo
         self.mãos = mãos
+######################################## Metodos ########################################    
     def falar_nome(self):
         nome = input("Digite seu nome: ")
         print(f"{nome}")
-falar = Pessoa.falar_nome(self)
-print(falar)
+
+######################################## Instancias da classe Pessoas ########################################
+pessoaA = Pessoas(2, 2, True, "curto", 2)                               
+pessoaA.falar_nome()
+print()
+
+
+
+
+
 # class Pet():
 #     def __init__(self, patas, pelos, olhos, rabo):
 #         self.patas = patas
