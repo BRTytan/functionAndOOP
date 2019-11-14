@@ -16,21 +16,26 @@
 ######################################## Classe Pessoas ########################################
 class Pessoas():
 ############################## Metodo Construtor __Init__ ##############################    
-    def __init__(self, pernas, olhos, pele, cabelo, mãos):
-        self.pernas = pernas
-        self.olhos = olhos
-        self.pele = pele
-        self.cabelo = cabelo
-        self.mãos = mãos
+    def __init__(self, idade, nome):
+        self.idade = idade
+        self.nome = nome
 ######################################## Metodos ########################################    
     def falar_nome(self):
-        nome = input("Digite seu nome: ")
+        nome = str(input("Digite seu nome: "))
         print(f"{nome}")
-
+    def falar_idade(self):
+        idade = int(input("Digite seu idade: "))
+        print(f"{idade}")
+    
 ######################################## Instancias da classe Pessoas ########################################
-pessoaA = Pessoas(2, 2, True, "curto", 2)                               
-pessoaA.falar_nome()
-print()
+pessoa1 = Pessoas("22 Anos", "Felippe")
+pessoa2 = Pessoas("24 Anos", "Thais")
+pessoa1.falar_nome()
+pessoa1.falar_idade()
+pessoa2.falar_nome()
+pessoa2.falar_idade()
+print(pessoa1.nome)
+print(pessoa1.idade)
 
 
 
